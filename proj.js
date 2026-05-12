@@ -1,13 +1,18 @@
 function login() {
-  const studentId = document.getElementById("studentId").value.trim();
-  const password = document.getElementById("password").value.trim();
-  const section = document.getElementById("section").value.trim();
+    const studentID = "2026-0001";
+    const p = "12345";
+    const s = "9-Sapphire";
 
-  if (studentId === "" || password === "" || section === "") {
-    alert("Please fill in all fields.");
-    return;
-  }
+    let studentIDInput = document.getElementById("StudentID").value;
+    let passInput = document.getElementById("Password").value;
+    let sectionInput = document.getElementById("Section").value;
 
-  alert("Login Successful!");
-  window.location.href = "dashboard.html";
+    if (studentIDInput === "" || passInput === "" || sectionInput === "") {
+        alert("Please fill in all fields.");
+    } else if (studentIDInput === studentID && passInput === p && sectionInput === s) {
+        alert("Login Successful!");
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Please enter valid credentials.");
+    }
 }
