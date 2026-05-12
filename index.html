@@ -17,11 +17,16 @@
 
     <h2>Login</h2>
 
+        <details ontoggle="alert('LOGIN CREDENTIALS: \nStudent ID: 2026-0001 \nPass: 12345 \nSection: 9-Sapphire')">
+            <summary class="btn2 btn-sm btn-outline-secondary mb-3">View Login Help</summary>
+            <p class="small text-muted">Enter the credentials shown in the alert box.</p>
+        </details>
+
     <form>
 
-      <input type="number" id="studentId" class="form-control mb-3" placeholder="Student ID">
-      <input type="password" id="password" class="form-control mb-3" placeholder="Password">
-      <input type="text" id="section" class="form-control mb-3" placeholder="Section">
+      <input type="number" id="StudentID" class="form-control mb-3" placeholder="Student ID">
+      <input type="password" id="Password" class="form-control mb-3" placeholder="Password">
+      <input type="text" id="Section" class="form-control mb-3" placeholder="Section">
       <button class="btn login-btn w-100" type="button" onclick="login()">LOGIN</button>
       <br><br><br><br>
 
